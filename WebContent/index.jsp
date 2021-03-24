@@ -16,11 +16,13 @@
 	
 	JSONObject jsonObj2 = (JSONObject) obj2;
 	String nm_part2 = (String) jsonObj2.get("name");
-	Long up_part2 = (Long) jsonObj2.get("unitprice");
+	String up_part2_tmp = (String) jsonObj2.get("unitprice");
+	Long up_part2 = Long.parseLong(up_part2_tmp);
 	
 	JSONObject jsonObj3 = (JSONObject) obj3;
 	String nm_part3 = (String) jsonObj3.get("name");
-	Long up_part3 = (Long) jsonObj3.get("unitprice");
+	String up_part3_tmp = (String) jsonObj3.get("unitprice");
+	Long up_part3 = Long.parseLong(up_part3_tmp);
 	
 	Integer quantity = 10;
 	Long tuprice = up_part2 + up_part3;
